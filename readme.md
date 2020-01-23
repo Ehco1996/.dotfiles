@@ -3,7 +3,7 @@
 
 ## dotbot
 
-* git clone https://github.com/Ehco1996/.dotfiles.git
+* `git clone https://github.com/Ehco1996/.dotfiles.git`
 
 
 ## shell
@@ -12,6 +12,20 @@
 
     `yum install -y zsh`
     `chsh -s $(which zsh)`
+
+
+    ```bash
+    # if you zhs version <=5.2
+    wget https://sourceforge.net/projects/zsh/files/zsh/5.4.2/zsh-5.4.2.tar.xz/download
+
+    tar -xvJf download
+    cd zsh-5.4.2/
+
+    ./configure
+    make && sudo make install
+
+    rm -rf download zsh-5.4.2
+    ```
 
 * oh-my-zsh
 
@@ -44,7 +58,7 @@
 
 * pyenv
 
-        `curl https://pyenv.run | bash)`
+    `curl https://pyenv.run | bash)`
 * go
 
 
