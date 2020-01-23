@@ -1,0 +1,131 @@
+# Could just force-add these files and leave this as '*', but this way I have a
+# nice explicit list for documentation's sake.
+
+# Ignore everything by default.
+*
+
+# Bash stuff (profile just sources bashrc, since it's the only thing sourced
+# when a shell is a login shell).
+!.bash*
+.*.swp
+.bash_history
+.bash_local
+.bash_logout
+!.profile
+
+# Zsh
+!.zshrc
+!.zsh
+!.zsh/*
+!.zsh/contrib
+!.zsh/contrib/*
+# Do ignore the data directory (my construct, it's where completion cache,
+# history etc live)
+.zsh/data
+.zsh/data/*
+# Do ignore local/sensitive settings
+.zsh/*local
+# Swapfiles (sigh)
+.zsh/*.swp
+
+# Git aliases, identification info
+!.gitconfig
+# The gitignore of this repository itself (!)
+!.gitignore
+# My global Git excludes file (acts as a global .gitignore)
+!.gitexcludes
+
+# Mercurial config (yup, stored in a Git repository. Take that, hg!)
+!.hgrc
+
+# IPython config (need directory here so gitignore works correctly.
+# This won't actually pull in the other contetns of the dir, though.
+# Which is good as all I care about is the...
+!.ipython
+# ...default profile's...
+!.ipython/profile_default
+# ...main config file
+!.ipython/profile_default/ipython_config.py
+
+# Virtualenvwrapper hooks
+!.virtualenvs
+!.virtualenvs/postmkvirtualenv
+
+# IRb config
+!.irbrc
+# RVM config
+!.rvmrc
+
+# Vim plugins, ftplugins, syntax etc etc
+!.vim
+!.vim/*
+!.vim/*/*
+!.vim/*/*/*
+!.vim/*/*/*/*
+!.vim/*/*/*/*/*
+!.vim/*/*/*/*/*/*
+# Do ignore netrw history
+.vim/.netrwhist
+# Do ignore vim-plug stuff, sigh
+.vim/plugged
+# Vim settings
+!.vimrc
+# Ignore swapfiles
+.vim/.*.swp
+.vim/*/.*.swp
+.vim/*/*/.*.swp
+.vim/*/*/*/.*.swp
+
+# Local copies of tools/scripts
+!bin
+!bin/*
+bin/.*.swp
+# Concourse CLI; changes depending on target version
+bin/fly
+
+# Config for local daemons (e.g. squid)
+!etc
+!etc/*
+etc/clusto*.conf
+
+# Screen, tmux
+!.screenrc
+!.tmux.conf
+!.tmux
+!.tmux/*.yml
+
+# Gem config
+!.gemrc
+
+# Mutt
+!.muttrc
+!.mutt
+!.mutt/*
+
+# RTorrent
+!.rtorrent.rc
+
+# Ack
+!.ackrc
+
+# Teamocil
+!.teamocil
+!.teamocil/*
+
+# Synergy
+!.synergy.conf
+
+# Leiningen (Clojure)
+!.lein
+!.lein/profiles.clj
+
+# Hammerspoon (Lua-based OS X automation tool)
+!.hammerspoon
+!.hammerspoon/*
+.hammerspoon/.*.swp
+
+# Linux workstation stuff
+!.config
+!.config/xfce4
+!.config/xfce4/terminal
+!.config/xfce4/terminal/terminalrc
