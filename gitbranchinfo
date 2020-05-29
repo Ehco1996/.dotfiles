@@ -1,0 +1,29 @@
+#!/bin/bash
+
+function listBranchWithCommitMessage() {
+  branches=`git branch --list $1`
+
+
+
+  while read -r branch; do
+    # git marks current branch with "* ", remove it
+    clean_branch_name=${branch//\*\ /}
+    # replace colors
+    clean_branch_name=`echo $clean_branch_name | tr -d '[:cntrl:]' | sed -E "s/\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"`
+    # replace symbolic-ref like `HEAD -> master`
+    clean_branch_name=`echo $clean_branch_name | sed -E "s/^.+ -> //g"`
+    current_revision=`git rev-parse $clean_branch_name`
+    # description=`git config branch.$clean_branch_name.description`
+    commit_message=`git log -1 --pretty=%B --oneline $current_revision`
+
+    if [ "${branch::1}" == "*" ]; then
+      printf "  👉  %-30s %-120s\n" "$branch" "     $commit_message"
+    else
+      printf "      %-30s %-120s\n" "  $branch" "$commit_message"
+    fi
+  done <<< "$branches"
+}
+
+listBranchWithCommitMessage "--color"
+
+

@@ -19,10 +19,8 @@ alias cow='fortune | cowsay | lolcat'
 alias d='docker'
 alias dp='docker-compose'
 alias t="tmux"
+alias gbinfo="~/.gitbranchinfo | bat"
 
-# for socks5
-alias ss='export all_proxy=socks5://127.0.0.1:1090'
-alias unss='unset all_proxy'
 
 # Set Spaceship ZSH as a prompt
 # autoload -U promptinit; promptinit
