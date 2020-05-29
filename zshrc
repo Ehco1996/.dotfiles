@@ -9,8 +9,6 @@ export GO111MODULE=on
 # plugins
 plugins=( git z pip go kubectl zsh-autosuggestions zsh-syntax-highlighting )
 
-ZSH_THEME="spaceship"
-
 source $ZSH/oh-my-zsh.sh
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
@@ -23,10 +21,10 @@ alias gbinfo="~/.gitbranchinfo | bat"
 
 
 # Set Spaceship ZSH as a prompt
-# autoload -U promptinit; promptinit
-# prompt spaceship
+autoload -U promptinit; promptinit
+prompt spaceship
 SPACESHIP_NODE_SHOW="false"
 
 # pyenv vitualenv
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
