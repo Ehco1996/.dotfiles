@@ -5,6 +5,9 @@
 
 * `git clone https://github.com/Ehco1996/.dotfiles.git`
 
+* `pip install dotbot`
+
+* `dotbot -c install.conf.yaml`
 
 ## shell
 
