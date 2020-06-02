@@ -7,7 +7,7 @@ export GO111MODULE=on
 
 
 # plugins
-plugins=( git z pip go kubectl zsh-autosuggestions zsh-syntax-highlighting )
+plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -18,6 +18,8 @@ alias d='docker'
 alias dp='docker-compose'
 alias t="tmux"
 alias gbinfo="~/.gitbranchinfo | bat"
+alias kc="kubectx"
+
 
 
 # Set Spaceship ZSH as a prompt
