@@ -4,7 +4,7 @@ export ZSH=~/.oh-my-zsh
 export LANG=en_US.UTF-8
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export GO111MODULE=on
-
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # plugins
 plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting )
