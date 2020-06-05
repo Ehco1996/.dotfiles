@@ -76,5 +76,13 @@
 * go
 
 
+* utils
 
+```
+# mac
+brew install gawk coreutils
+
+# linux
+apt-get install gawk net-tools coreutils
+```
 
