@@ -46,6 +46,17 @@
 
     `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
 
+
+* tmux
+
+ ```
+ # install tpm
+ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+ # install plugin
+ prefix + I
+ ```
+
 ## cli tools
 
 * sshw
