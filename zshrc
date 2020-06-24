@@ -5,7 +5,7 @@ export LANG=en_US.UTF-8
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export GO111MODULE=on
 export PATH=$PATH:$(go env GOPATH)/bin
-export ANSIBLE_CONFIG=/Users/ehco/Documents/code/ehco/k3s/ansible/ansible.cfg
+export ANSIBLE_CONFIG=/Users/ehco/gwork/ansible/ansible.cfg
 
 # plugins
 plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting )
