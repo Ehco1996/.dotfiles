@@ -12,21 +12,11 @@ plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 
-#code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 alias cow='fortune | cowsay | lolcat'
 alias d='docker'
 alias dp='docker-compose'
 alias t="tmux"
-alias gbinfo="~/.gitbranchinfo | bat"
 alias kc="kubectx"
-
-#ZSH_THEME="spaceship"
-
-# Set Spaceship ZSH as a prompt
-#autoload -U promptinit; promptinit
-#prompt spaceship
-#SPACESHIP_NODE_SHOW="false"
 
 # pyenv vitualenv
 #eval "$(pyenv init -)"

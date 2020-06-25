@@ -26,6 +26,11 @@
         create: false
         relink: true
         force: false
+    ~/.config/starship.toml:
+        path: startship.toml
+        create: false
+        relink: true
+        force: false
 
 
 # - shell:
