@@ -17,6 +17,7 @@ alias d='docker'
 alias dp='docker-compose'
 alias t="tmux"
 alias kc="kubectx"
+alias wopen="explorer.exe"
 
 # pyenv vitualenv
 #eval "$(pyenv init -)"
