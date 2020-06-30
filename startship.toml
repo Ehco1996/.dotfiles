@@ -1,13 +1,12 @@
 [kubernetes]
 disabled=false
 symbol = "⛵ "
-style = "dimmed green"
+style = "green"
 
 [memory_usage]
 disabled = false
 show_percentage = true
-show_swap = true
 threshold = -1
-symbol = " "
+symbol = "🐏 "
 separator = "/"
-style = "bold dimmed green"
+style = "bold green"
