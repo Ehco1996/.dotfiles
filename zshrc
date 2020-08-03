@@ -23,4 +23,7 @@ alias wopen="explorer.exe"
 # pyenv vitualenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-eval "$(starship init zsh)"
+
+autoload -U promptinit; promptinit
+prompt spaceship
+
