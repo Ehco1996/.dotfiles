@@ -1,3 +1,30 @@
+let mapleader = " "
+
+" vim plug 插件管理器
+call plug#begin('~/.vim/plugged')
+
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+
+call plug#end()
+
+" NERDtree
+let g:NERDTreeIgnore=['\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', '.git$', '.idea', '.vscode', '\.swp']
+let NERDTreeChDirMode=3
+let NERDTreeShowBookmarks=1
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+let NERDTreeRemoveFileCmd='rm '
+let NERDTreeAutoDeleteBuffer=1
+let g:nerdtree_tabs_focus_on_files=1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+" leader + b 切换nerdtree
+nnoremap <leader>b :NERDTreeToggle<CR>
+
+" 不同vim模式修改光标
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 set number " 显示行号
 set relativenumber " 显示相对行号（这个非常重要，慢慢体会）
 set hlsearch " 搜索结果高亮
