@@ -28,6 +28,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set number " 显示行号
 set relativenumber " 显示相对行号（这个非常重要，慢慢体会）
 set hlsearch " 搜索结果高亮
+set incsearch " 增量搜索
 set autoindent " 自动缩进
 set smartindent " 智能缩进
 set tabstop=4 " 设置 tab 制表符所占宽度为 4
