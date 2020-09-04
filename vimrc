@@ -19,10 +19,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 " theme:
-Plug 'doums/darcula'
-Plug 'mhinz/vim-startify'
+Plug 'gryf/wombat256grf'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 " programming
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,7 +38,7 @@ let NERDTreeMinimalUI=1
 let NERDTreeRemoveFileCmd='rm '
 let NERDTreeAutoDeleteBuffer=1
 let g:nerdtree_tabs_focus_on_files=1
-" let NERDTreeMouseMode=2 " 指定鼠标模式（1.双击打开；2.单目录双文件；3.单击打开）
+let NERDTreeMouseMode=2 " 指定鼠标模式（1.双击打开；2.单目录双文件；3.单击打开）
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 
 " 不同vim模式修改光标
@@ -62,7 +60,12 @@ filetype plugin indent on    " 启用自动补全
 syntax on " 开启语法高亮
 set noswapfile  " 不需要.swp文件
 set mouse=a " 打开鼠
-set updatetime=300
+
+" colorscheme
+set termguicolors
+set background=dark
+colorscheme wombat256grf
+
 
 " fold
 set foldenable
@@ -100,6 +103,8 @@ let g:go_def_mode = 'gopls'
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 0
 let g:go_fmt_autosave = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_functions = 1
@@ -159,3 +164,4 @@ nmap gd <Plug>(coc-definition)
 nmap gy <Plug>(coc-type-definition)
 nmap gi <Plug>(coc-implementation)
 nmap gr <Plug>(coc-references)
+
