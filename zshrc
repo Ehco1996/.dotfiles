@@ -27,3 +27,5 @@ eval "$(pyenv virtualenv-init -)"
 autoload -U promptinit; promptinit
 prompt spaceship
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

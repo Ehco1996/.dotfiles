@@ -10,16 +10,24 @@ nnoremap <leader>w :wa<cr>
 vnoremap <leader>w <esc>:wa<cr>
 nnoremap <leader>q :q<cr>
 
+" 搜索当前单词，依赖 https://github.com/ggreer/the_silver_searcher
+nnoremap <silent> <Leader>p :Ag <C-R><C-W><CR>
+" 搜索文件
+nnoremap <silent> <c-p> :Files <CR>
+
 " leader + b 切换nerdtree
 nnoremap <leader>b :NERDTreeToggle<CR>
 
 " vim plug 插件管理器
 call plug#begin('~/.vim/plugged')
+" editor
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " move
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 " theme:
-Plug 'gryf/wombat256grf'
+Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 " programming
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
@@ -40,6 +48,8 @@ let NERDTreeAutoDeleteBuffer=1
 let g:nerdtree_tabs_focus_on_files=1
 let NERDTreeMouseMode=2 " 指定鼠标模式（1.双击打开；2.单目录双文件；3.单击打开）
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+" auto open or close NERDTree
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " 不同vim模式修改光标
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
@@ -60,11 +70,20 @@ filetype plugin indent on    " 启用自动补全
 syntax on " 开启语法高亮
 set noswapfile  " 不需要.swp文件
 set mouse=a " 打开鼠
+set nocompatible "关闭vi兼容模式
+" 修正 vim 删除/退格键行为
+" 原生的 vim 行为有点怪：
+" 如果你在一行的开头切换到插入模式，这时按退格无法退到上一行
+" 如果你在一行的某一列切换到插入模式，这时按退格无法退删除这一列之前的字符
+" 如果你开启了 autoindent，按回车时 vim 会根据上一行自动缩进，这时按退格无法删除缩进字符
+" 通过设置 eol, start 和 indent 可以修正上述行为
+set backspace=eol,start,indent
+
 
 " colorscheme
 set termguicolors
 set background=dark
-colorscheme wombat256grf
+colorscheme nord 
 
 
 " fold
