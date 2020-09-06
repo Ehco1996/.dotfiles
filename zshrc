@@ -9,7 +9,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export ANSIBLE_CONFIG=/Users/ehco/gwork/ansible/ansible.cfg
 
 # plugins
-plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting )
+plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 
