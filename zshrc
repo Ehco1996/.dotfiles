@@ -13,6 +13,7 @@ export ANSIBLE_CONFIG=/Users/ehco/gwork/ansible/ansible.cfg
 plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
+source /Users/ehco/.gvm/scripts/gvm 
 
 alias cow='fortune | cowsay | lolcat'
 alias d='docker'
