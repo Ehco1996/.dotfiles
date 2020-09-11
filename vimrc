@@ -34,6 +34,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs' " 自动补全括号的插件，包括小括号，中括号，以及花括号
+Plug 'uarun/vim-protobuf'
 " terminal
 Plug 'skywind3000/vim-terminal-help'
 call plug#end()
@@ -84,8 +85,12 @@ set backspace=eol,start,indent
 " colorscheme
 set termguicolors
 set background=dark
-colorscheme nord 
 
+colorscheme nord
+
+"fzf
+let g:fzf_preview_window = 'right:70%'
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.6} }
 
 " fold
 set foldenable
