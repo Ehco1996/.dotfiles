@@ -5,6 +5,8 @@
 
 * `git clone https://github.com/Ehco1996/.dotfiles.git`
 
+* `https://github.com/Ehco1996/.dotfiles.git`
+
 * `pip install dotbot`
 
 * `dotbot -c install.conf.yaml`
@@ -87,4 +89,3 @@ brew install gawk coreutils
 # linux
 apt-get install gawk net-tools coreutils
 ```
-

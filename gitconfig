@@ -7,7 +7,7 @@
 	helper = store
 [core]
 	excludesfile = /Users/ehco/.gitignore_global
-	quotepath = false
+	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
