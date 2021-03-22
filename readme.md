@@ -24,7 +24,6 @@
 
  `chsh -s $(which zsh)`
 
-
 ``` bash
     # if you zhs version <=5.2
     wget https://sourceforge.net/projects/zsh/files/zsh/5.4.2/zsh-5.4.2.tar.xz/download
@@ -60,7 +59,6 @@
 
 * tmux
 
-
 ## cli tools
 
 * sshw
@@ -88,4 +86,3 @@
  `curl https://pyenv.run | bash)`
 
 * go
-
