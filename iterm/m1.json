@@ -1,5 +1,4 @@
 {
-  "ASCII Ligatures" : true,
   "Working Directory" : "\/Users\/ehco",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -18,7 +17,7 @@
     "Green Component" : 0.93440383672714233
   },
   "Use Italic Font" : true,
-  "HotKey Characters" : " ",
+  "HotKey Characters" : "",
   "Foreground Color" : {
     "Red Component" : 0.5099714994430542,
     "Color Space" : "sRGB",
@@ -57,7 +56,6 @@
     "slogin",
     "telnet"
   ],
-  "Non-ASCII Ligatures" : true,
   "Scrollback Lines" : 1000,
   "HotKey Window Reopens On Activation" : false,
   "Draw Powerline Glyphs" : true,
@@ -89,14 +87,13 @@
   "Bold Color" : {
     "Red Component" : 0.96881103515625,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.55158907175064087,
+    "Blue Component" : 0.55158905076353903,
     "Alpha Component" : 1,
-    "Green Component" : 0.49728140234947205
+    "Green Component" : 0.49728140886873007
   },
-  "Use Cursor Guide" : false,
   "Unlimited Scrollback" : false,
   "Custom Command" : "No",
-  "HotKey Key Code" : 49,
+  "HotKey Key Code" : 0,
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Action" : 10,
@@ -294,9 +291,9 @@
     "Alpha Component" : 1,
     "Green Component" : 0.64777618646621704
   },
-  "Window Type" : 1,
+  "Window Type" : 0,
   "Use Bright Bold" : true,
-  "Has Hotkey" : true,
+  "Has Hotkey" : false,
   "HotKey Modifier Activation" : 1,
   "Cursor Text Color" : {
     "Red Component" : 0,
@@ -321,7 +318,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.87745916843414307
   },
-  "Name" : "my-iterm",
+  "Name" : "m1",
   "Blinking Cursor" : true,
   "Guid" : "1B8B97CE-A3D7-4C3C-90CA-F4A941CB5108",
   "Idle Code" : 0,
@@ -347,7 +344,7 @@
     "Green Component" : 0.96676164865493774
   },
   "Ambiguous Double Width" : false,
-  "Blur Radius" : 5.9730263647089146,
+  "Blur Radius" : 2.2551098508883238,
   "Background Image Mode" : 2,
   "Ansi 0 Color" : {
     "Red Component" : 0.14054960012435913,
@@ -357,7 +354,7 @@
     "Green Component" : 0.15158611536026001
   },
   "Blur" : true,
-  "Normal Font" : "CascadiaCodePL-Regular 16",
+  "Normal Font" : "FiraCode-Retina 15",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
     "Red Component" : 0.81703943014144897,
@@ -366,8 +363,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.81497782468795776
   },
-  "Space" : -1,
-  "HotKey Window AutoHides" : false,
+  "HotKey Window AutoHides" : true,
   "Command" : "",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
@@ -388,8 +384,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.88438087701797485
   },
-  "HotKey Modifier Flags" : 1048576,
-  "Minimum Contrast" : 0.25142045454545453,
+  "HotKey Modifier Flags" : 0,
+  "Minimum Contrast" : 0,
   "Ansi 6 Color" : {
     "Red Component" : 0.45820003747940063,
     "Color Space" : "sRGB",
@@ -397,7 +393,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.45090144872665405
   },
-  "Transparency" : 0.081197748329433703,
+  "Transparency" : 0.05046795685279188,
   "HotKey Activated By Modifier" : false,
   "Background Color" : {
     "Red Component" : 0.14054960012435913,
@@ -406,11 +402,9 @@
     "Alpha Component" : 1,
     "Green Component" : 0.15158611536026001
   },
-  "Open Toolbelt" : false,
-  "Blink Allowed" : false,
-  "Screen" : -2,
-  "HotKey Characters Ignoring Modifiers" : " ",
-  "Non Ascii Font" : "CascadiaCodePL-Regular 15",
+  "Screen" : -1,
+  "HotKey Characters Ignoring Modifiers" : "",
+  "Non Ascii Font" : "FiraCode-SemiBold 15",
   "Ansi 13 Color" : {
     "Red Component" : 0.66851764917373657,
     "Color Space" : "sRGB",
@@ -425,12 +419,12 @@
   ],
   "Visual Bell" : true,
   "Custom Directory" : "No",
-  "Thin Strokes" : 4,
   "Ansi 5 Color" : {
     "Red Component" : 0.52799570560455322,
     "Color Space" : "sRGB",
     "Blue Component" : 0.51833462715148926,
     "Alpha Component" : 1,
     "Green Component" : 0.52255105972290039
-  }
+  },
+  "ASCII Ligatures" : true
 }

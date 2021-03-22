@@ -1,6 +1,5 @@
 # setup my env
 
-
 ## dotbot
 
 * `git clone https://github.com/Ehco1996/.dotfiles.git`
@@ -9,15 +8,24 @@
 
 * `dotbot -c install.conf.yaml`
 
+## font
+
+* https://github.com/ryanoasis/nerd-fonts
+
+* https://github.com/tonsky/FiraCode
+    - brew tap homebrew/cask-fonts
+    - brew install --cask font-fira-code
+
 ## shell
 
 * zsh
 
-    `yum install -y zsh`
-    `chsh -s $(which zsh)`
+ `yum install -y zsh`
+
+ `chsh -s $(which zsh)`
 
 
-    ```bash
+``` bash
     # if you zhs version <=5.2
     wget https://sourceforge.net/projects/zsh/files/zsh/5.4.2/zsh-5.4.2.tar.xz/download
 
@@ -32,59 +40,52 @@
 
 * oh-my-zsh
 
-    `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+ `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
 * zsh plugin
 
-    `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+ `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 
-    `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+ `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 
 * spaceship-prompt for oh-my-zsh
 
-    `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"`
+ `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"`
 
-    `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
+ `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
 
 * gvm
-`bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)`
+
+ `bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)`
 
 * tmux
 
- ```
- # install tpm
- git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
- # install plugin
- prefix + I
- ```
 
 ## cli tools
 
 * sshw
 
-    `https://github.com/yinheli/sshw`
+ `https://github.com/yinheli/sshw`
+
+ `go get -u github.com/Ehco1996/sshw/cmd/sshw`
 
 * kubectl
 
 * kubectx
 
-## lang
+* fzf
 
+* fzf-tab
+
+ `git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab`
+
+ * https://github.com/junegunn/vim-plug
+
+## lang
 
 * pyenv
 
-    `curl https://pyenv.run | bash)`
+ `curl https://pyenv.run | bash)`
+
 * go
-
-
-* utils
-
-```
-# mac
-brew install gawk coreutils
-
-# linux
-apt-get install gawk net-tools coreutils
-```
 
