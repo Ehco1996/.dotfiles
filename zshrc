@@ -5,7 +5,6 @@ export ANSIBLE_CONFIG=/Users/ehco/gwork/ansible/ansible.cfg
 
 # plugins
 plugins=( git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
-ZSH_THEME="spaceship"
 
 source $ZSH/oh-my-zsh.sh
 # source /Users/ehco/.gvm/scripts/gvm
@@ -21,3 +20,8 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Set Spaceship ZSH as a prompt
+fpath=($fpath "/Users/ehco/.zfunctions")
+autoload -U promptinit; promptinit
+prompt spaceship
