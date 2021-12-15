@@ -5,8 +5,6 @@ style = "green"
 
 [memory_usage]
 disabled = false
-show_percentage = true
 threshold = -1
 symbol = "🐏 "
-separator = "/"
 style = "bold green"
