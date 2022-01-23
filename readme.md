@@ -63,7 +63,7 @@
 
 * sshw
 
- `https://github.com/yinheli/sshw`
+ `https://github.com/Ehco1996/sshw`
 
  `go get -u github.com/Ehco1996/sshw/cmd/sshw`
 
@@ -78,6 +78,12 @@
  `git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab`
 
  * https://github.com/junegunn/vim-plug
+
+
+* zoxide https://github.com/ajeetdsouza/zoxide
+
+    `brew install zoxide`
+
 
 ## lang
 

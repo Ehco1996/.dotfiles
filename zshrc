@@ -5,8 +5,8 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH=$PATH:/usr/local/Cellar/perl/5.32.1_1/bin
-export PATH=$PATH:/opt/homebrew/Cellar/perl/5.34.0/bin/
-export PATH=$PATH:/Users/ehco/Documents/pingcap/ticdc/bin/
+export PATH=$PATH:/opt/homebrew/Cellar/perl/5.34.0/bin
+export PATH=$PATH:/Users/ehco/Documents/pingcap/tiflow/bin
 export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
 export PATH=/Users/ehco/.tiup/bin:$PATH
 
@@ -20,9 +20,9 @@ export DM_MASTER_ADDR="127.0.0.1:8261"
 export KUBECONFIG="/Users/ehco/.kube/config"
 export MBD_DB_PASSWORD="123456"
 export MYSQL_PASSWORD="123456"
-
+export GORACE=history_size=2
 # plugins
-plugins=(git z pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
+plugins=(git pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
 
 source $ZSH/oh-my-zsh.sh
 source /Users/ehco/.gvm/scripts/gvm
@@ -35,9 +35,12 @@ alias kc="kubectx"
 alias sed="gsed"
 alias ln="gln"
 
-# pyenv vitualenv
+# pyenv
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
+
+# z plugin
+eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
