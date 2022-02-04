@@ -17,7 +17,7 @@
     "Green Component" : 0.93440383672714233
   },
   "Use Italic Font" : true,
-  "HotKey Characters" : "",
+  "HotKey Characters" : "Z",
   "Foreground Color" : {
     "Red Component" : 0.5099714994430542,
     "Color Space" : "sRGB",
@@ -25,7 +25,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.50998401641845703
   },
-  "HotKey Window Floats" : true,
+  "HotKey Window Floats" : false,
   "Right Option Key Sends" : 0,
   "Character Encoding" : 4,
   "Selection Color" : {
@@ -35,7 +35,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.38497427105903625
   },
-  "Blend" : 0.35173365012886598,
+  "Blend" : 0.2414546907047822,
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
   "Ansi 4 Color" : {
@@ -56,9 +56,10 @@
     "slogin",
     "telnet"
   ],
-  "Scrollback Lines" : 1000,
+  "Non-ASCII Ligatures" : true,
+  "Scrollback Lines" : 0,
   "HotKey Window Reopens On Activation" : false,
-  "Draw Powerline Glyphs" : true,
+  "Draw Powerline Glyphs" : false,
   "Flashing Bell" : false,
   "Cursor Guide Color" : {
     "Red Component" : 0.98970669507980347,
@@ -75,7 +76,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.97926086187362671
   },
-  "Use Non-ASCII Font" : true,
+  "Use Non-ASCII Font" : false,
   "Link Color" : {
     "Red Component" : 0.73402667045593262,
     "Color Space" : "sRGB",
@@ -87,13 +88,13 @@
   "Bold Color" : {
     "Red Component" : 0.96881103515625,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.55158905076353903,
+    "Blue Component" : 0.55158907175064087,
     "Alpha Component" : 1,
-    "Green Component" : 0.49728140886873007
+    "Green Component" : 0.49728140234947205
   },
-  "Unlimited Scrollback" : false,
+  "Unlimited Scrollback" : true,
   "Custom Command" : "No",
-  "HotKey Key Code" : 0,
+  "HotKey Key Code" : 6,
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Action" : 10,
@@ -354,7 +355,7 @@
     "Green Component" : 0.15158611536026001
   },
   "Blur" : true,
-  "Normal Font" : "FiraCode-Retina 15",
+  "Normal Font" : "HackNerdFontComplete-Regular 15",
   "Vertical Spacing" : 1,
   "Ansi 7 Color" : {
     "Red Component" : 0.81703943014144897,
@@ -384,7 +385,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.88438087701797485
   },
-  "HotKey Modifier Flags" : 0,
+  "HotKey Modifier Flags" : 131072,
   "Minimum Contrast" : 0,
   "Ansi 6 Color" : {
     "Red Component" : 0.45820003747940063,
@@ -402,9 +403,10 @@
     "Alpha Component" : 1,
     "Green Component" : 0.15158611536026001
   },
+  "Unicode Version" : 9,
   "Screen" : -1,
-  "HotKey Characters Ignoring Modifiers" : "",
-  "Non Ascii Font" : "FiraCode-SemiBold 15",
+  "HotKey Characters Ignoring Modifiers" : "Z",
+  "Non Ascii Font" : "FiraCode-Regular 15",
   "Ansi 13 Color" : {
     "Red Component" : 0.66851764917373657,
     "Color Space" : "sRGB",
@@ -426,5 +428,5 @@
     "Alpha Component" : 1,
     "Green Component" : 0.52255105972290039
   },
-  "ASCII Ligatures" : true
+  "ASCII Ligatures" : false
 }

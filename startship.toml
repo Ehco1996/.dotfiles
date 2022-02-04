@@ -1,10 +1,8 @@
 [kubernetes]
-disabled=false
-symbol = "⛵ "
-style = "green"
-
-[memory_usage]
 disabled = false
-threshold = -1
-symbol = "🐏 "
-style = "bold green"
+style = "green"
+symbol = "⛵ "
+
+[[battery.display]]
+style = "bold red"
+threshold = 30
