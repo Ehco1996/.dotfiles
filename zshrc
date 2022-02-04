@@ -36,11 +36,11 @@ fpath=($fpath "/Users/ehco/.zfunctions")
 
 # golang
 export PATH="$PATH:$(go env GOPATH)/bin"
-source /Users/ehco/.gvm/scripts/gvm
+source $HOME/.gvm/scripts/gvm
 export GORACE=history_size=2
 
 # python
-export PATH="~/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 

@@ -10,11 +10,7 @@
 
 ## font
 
-* https://github.com/ryanoasis/nerd-fonts
-
-* https://github.com/tonsky/FiraCode
-    - brew tap homebrew/cask-fonts
-    - brew install --cask font-fira-code
+* <https://github.com/ryanoasis/nerd-fonts>
 
 ## shell
 
@@ -83,6 +79,7 @@
 * zoxide https://github.com/ajeetdsouza/zoxide
 
     `brew install zoxide`
+    `apt install zoxide`
 
 
 ## lang
