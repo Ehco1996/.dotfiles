@@ -32,9 +32,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 " programming
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs' " 自动补全括号的插件，包括小括号，中括号，以及花括号
-Plug 'uarun/vim-protobuf'
 " terminal
 Plug 'skywind3000/vim-terminal-help'
 call plug#end()
@@ -162,8 +160,6 @@ augroup vim-go
 
 augroup END
 
-" coc.nvim
-" if hidden is not set, TextEdit might fail.
 set hidden
 
 " Some servers have issues with backup files, see #649

@@ -40,6 +40,7 @@ source /Users/ehco/.gvm/scripts/gvm
 export GORACE=history_size=2
 
 # python
+export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
