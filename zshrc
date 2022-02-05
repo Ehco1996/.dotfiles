@@ -6,6 +6,10 @@ alias ln="gln"
 
 # zsh
 export ZSH=~/.oh-my-zsh
+eval "$(zoxide init zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+fpath=($fpath "/Users/ehco/.zfunctions")
+plugins=(git pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
@@ -27,12 +31,6 @@ export KUBECONFIG="/Users/ehco/.kube/config"
 export MBD_DB_PASSWORD="123456"
 export MYSQL_PASSWORD="123456"
 export ANSIBLE_CONFIG=/Users/ehco/gwork/ansible/ansible.cfg
-
-# plugins
-plugins=(git pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
-eval "$(zoxide init zsh)"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-fpath=($fpath "/Users/ehco/.zfunctions")
 
 # golang
 export PATH="$PATH:$(go env GOPATH)/bin"
