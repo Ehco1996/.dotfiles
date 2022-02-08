@@ -13,8 +13,7 @@ plugins=(git pip golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubicon:$PATH"
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
