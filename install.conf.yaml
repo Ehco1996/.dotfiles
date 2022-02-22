@@ -1,38 +1,31 @@
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.gitconfig:
-        path: gitconfig
-        create: false
-        relink: true
-        force: false
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
-        relink: true
-        force: false
+      path: gitconfig
+      create: false
+      relink: true
+      force: false
     ~/.tmux.conf:
-        path: tmux.conf
-        create: false
-        relink: true
-        force: false
+      path: tmux.conf
+      create: false
+      relink: true
+      force: false
     ~/.zshrc:
-        path: zshrc
-        create: false
-        relink: true
-        force: false
+      path: zshrc
+      create: false
+      relink: true
+      force: false
     ~/.vimrc:
-        path: vimrc
-        create: false
-        relink: true
-        force: false
+      path: vimrc
+      create: false
+      relink: true
+      force: false
     ~/.config/starship.toml:
-        path: startship.toml
-        create: false
-        relink: true
-        force: false
-
-
+      path: startship.toml
+      create: false
+      relink: true
+      force: false
 # - shell:
 #   - yum install zsh -y
 #   - chsh -s $(which zsh)

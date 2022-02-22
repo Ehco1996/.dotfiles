@@ -1,8 +1,0 @@
-Host ubuntu
-    HostName 192.168.123.222
-    User ehco
-
-Host *
-    ServerAliveInterval 60
-
-

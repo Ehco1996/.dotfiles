@@ -3,8 +3,7 @@
 # Only allow connections from localhost
 bind-address = 0.0.0.0
 log-bin=mysql-bin
-server-id=1
-tls_version=TLSv1.2
+server-id=2
 
 # binlog
 binlog_format = row
