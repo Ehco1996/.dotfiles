@@ -20,7 +20,7 @@
 
  `chsh -s $(which zsh)`
 
-``` bash
+```bash
     # if you zhs version <=5.2
     wget https://sourceforge.net/projects/zsh/files/zsh/5.4.2/zsh-5.4.2.tar.xz/download
 
@@ -33,6 +33,9 @@
     rm -rf download zsh-5.4.2
     ```
 
+* start-ship
+ `curl -sS https://starship.rs/install.sh | sh`
+
 * oh-my-zsh
 
  `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
@@ -42,12 +45,6 @@
  `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 
  `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-
-* spaceship-prompt
-
-`npm install -g spaceship-prompt`
-
-
 
 * gvm
 
@@ -75,12 +72,10 @@
 
  * https://github.com/junegunn/vim-plug
 
-
 * zoxide https://github.com/ajeetdsouza/zoxide
+ `brew install zoxide`
 
-    `brew install zoxide`
-    `apt install zoxide`
-
+ `apt install zoxide`
 
 ## lang
 
