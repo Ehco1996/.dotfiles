@@ -1,0 +1,9 @@
+[mariadb]
+log-bin
+server_id=3
+log-basename=upstream1
+binlog-format=row
+user=root
+
+# gtid
+gtid_strict_mode=1
