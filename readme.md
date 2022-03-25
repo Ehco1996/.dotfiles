@@ -4,9 +4,9 @@
 
 * `git clone https://github.com/Ehco1996/.dotfiles.git`
 
-* `pip install dotbot`
+* `pip3 install dotbot`
 
-* `dotbot -c install.conf.yaml`
+* `python3 -m dotbot -c install.conf.yaml`
 
 ## font
 
@@ -58,13 +58,15 @@
 
  `https://github.com/Ehco1996/sshw`
 
- `go get -u github.com/Ehco1996/sshw/cmd/sshw`
+ `go install github.com/Ehco1996/sshw/cmd/sshw@master`
 
 * kubectl
+ `brew install kubectl`
 
 * kubectx
-
+ `brew install kubectx`
 * fzf
+ `brew install fzf`
 
 * fzf-tab
 
