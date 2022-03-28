@@ -22,6 +22,7 @@ export MYSQL_PSWD=123456
 export MYSQL_HOST=127.0.0.1
 export DM_MASTER_ADDR="127.0.0.1:8261"
 export PATH="$PATH:$HOME/Documents/pingcap/tiflow/bin"
+export PATH="$PATH:$HOME/Documents/pingcap/tidb/bin"
 export PATH="$HOME/.tiup/bin:$PATH"
 
 # dev
