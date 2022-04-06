@@ -1,0 +1,15 @@
+# Default Homebrew MySQL server config
+[mysqld]
+# Only allow connections from localhost
+bind-address = 0.0.0.0
+server-id=1
+tls_version=TLSv1.2
+
+# binlog
+log-bin=ON
+binlog_format = row
+max-binlog-size=4096
+
+# GTID
+gtid_mode=on
+enforce_gtid_consistency=on
