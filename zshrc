@@ -3,6 +3,7 @@ alias k="kubectl"
 alias kc="kubectx"
 alias sed="gsed"
 alias ln="gln"
+alias weather="curl wttr.in"
 
 # zsh
 export ZSH=~/.oh-my-zsh
@@ -38,7 +39,7 @@ export GORACE=history_size=2
 # python
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-# eval "$(pyenv init --path)"
+eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
 # prompt
