@@ -1,3 +1,6 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
+
 # alias
 alias k="kubectl"
 alias kc="kubectx"
@@ -16,6 +19,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 # pingcap
 export MYSQL_PORT=3306
@@ -44,3 +48,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # prompt
 eval "$(starship init zsh)"
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
