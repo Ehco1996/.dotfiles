@@ -6,3 +6,6 @@ symbol = "⛵ "
 [[battery.display]]
 style = "bold red"
 threshold = 30
+
+[gcloud]
+disabled = true
