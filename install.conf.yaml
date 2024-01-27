@@ -6,11 +6,11 @@
     #   create: false
     #   relink: true
     #   force: false
-    # ~/.tmux.conf:
-    #   path: tmux.conf
-    #   create: false
-    #   relink: true
-    #   force: false
+    ~/.tmux.conf:
+      path: tmux.conf
+      create: false
+      relink: true
+      force: false
     # ~/.vimrc:
     #   path: vimrc
     #   create: false
