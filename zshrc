@@ -9,7 +9,6 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fpath=($fpath "$HOME/.zfunctions")
 plugins=(git pip poetry golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
-
 source $ZSH/oh-my-zsh.sh
 
 
@@ -32,7 +31,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # golang
 export PATH="$PATH:$(go env GOPATH)/bin"
-source $HOME/.gvm/scripts/gvm
+# source $HOME/.gvm/scripts/gvm
 
 # python
 export PATH="$HOME/.pyenv/bin:$PATH"

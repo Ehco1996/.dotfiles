@@ -58,7 +58,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
  `https://github.com/Ehco1996/sshw`
 
- `go install github.com/Ehco1996/sshw/cmd/sshw@master`
+ `go install github.com/yinheli/sshw/cmd/sshw@latest`
 
 * kubectl
  `brew install kubectl`
