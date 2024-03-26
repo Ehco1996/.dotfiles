@@ -9,6 +9,7 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fpath=($fpath "$HOME/.zfunctions")
 plugins=(git pip poetry golang kubectl zsh-autosuggestions zsh-syntax-highlighting fzf-tab)
+DISABLE_MAGIC_FUNCTIONS=true # disable magic functions for oh-my-zsh otherwise it will cause url encode issue
 source $ZSH/oh-my-zsh.sh
 
 
