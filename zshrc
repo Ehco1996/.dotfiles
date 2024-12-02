@@ -35,11 +35,13 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 # source $HOME/.gvm/scripts/gvm
 
 # python
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
 
 # prompt
 eval "$(starship init zsh)"
 
+# develop env
+eval "$(~/.local/bin/mise activate zsh)"

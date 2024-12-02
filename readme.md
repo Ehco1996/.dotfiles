@@ -99,3 +99,7 @@ poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ```bash
  bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 ```
+
+* dev tool mise
+
+# https://github.com/jdx/mise
