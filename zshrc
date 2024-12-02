@@ -13,22 +13,15 @@ DISABLE_MAGIC_FUNCTIONS=true # disable magic functions for oh-my-zsh otherwise i
 source $ZSH/oh-my-zsh.sh
 
 
-# pingcap
-# export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
-# export MYSQL_PORT=3306
-# export MYSQL_PSWD=123456
-# export MYSQL_HOST=127.0.0.1
-# export DM_MASTER_ADDR="127.0.0.1:8261"
-# export PATH="$HOME/.tiup/bin:$PATH"
-# alias sed="gsed"
-# alias ln="gln"
-
-# dev
+# dev env
+eval "$(~/.local/bin/mise activate zsh)"
 export KUBECONFIG="$HOME/.kube/config"
-export MBD_DB_PASSWORD="123456"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-
+# homebrew related ssl issue for extra build tools
+# see more in https://mise.jdx.dev/lang/python.html#troubleshooting-errors-with-homebrew
+export CFLAGS="-I$(brew --prefix openssl)/include"
+export LDFLAGS="-L$(brew --prefix openssl)/lib"
 
 # golang
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -40,8 +33,5 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 # eval "$(pyenv init -)"
 
 
-# prompt
+# shell prompt
 eval "$(starship init zsh)"
-
-# develop env
-eval "$(~/.local/bin/mise activate zsh)"
