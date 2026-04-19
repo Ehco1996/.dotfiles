@@ -31,7 +31,6 @@ _claude_ssh_wrap() {
 claude() { _claude_ssh_wrap "command claude $*"; }
 c() { _claude_ssh_wrap "command claude --dangerously-skip-permissions $*"; }
 
-alias peon="bash /Users/ehco/.claude/hooks/peon-ping/peon.sh"
 
 # ── Completion ────────────────────────────────────────────────
 autoload -Uz compinit
@@ -45,7 +44,7 @@ source /opt/homebrew/opt/fzf-tab/share/fzf-tab/fzf-tab.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ── Dev tools ─────────────────────────────────────────────────
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 
