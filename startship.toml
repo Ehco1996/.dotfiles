@@ -1,3 +1,17 @@
+# --- SSH / Remote indicator ---
+[hostname]
+ssh_only = true
+format = "[$ssh_symbol$hostname]($style) "
+style = "bold red"
+ssh_symbol = "🖥 "
+
+[username]
+show_always = false
+format = "[$user]($style)@"
+style_user = "bold yellow"
+style_root = "bold red"
+
+# --- Existing ---
 [kubernetes]
 disabled = false
 style = "green"

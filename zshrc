@@ -1,6 +1,5 @@
 # ── Environment ───────────────────────────────────────────────
-export PATH="/opt/homebrew/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH"
-export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH"
 export KUBECONFIG="$HOME/.kube/config"
 export SSHW_CONFIG_PATH="/Users/ehco/Google\ Drive/My\ Drive/sshw.yml"
 export CFLAGS="-I/opt/homebrew/opt/openssl/include"
@@ -31,6 +30,7 @@ _claude_ssh_wrap() {
 claude() { _claude_ssh_wrap "command claude $*"; }
 c() { _claude_ssh_wrap "command claude --dangerously-skip-permissions $*"; }
 
+alias peon="bash /Users/ehco/.claude/hooks/peon-ping/peon.sh"
 
 # ── Completion ────────────────────────────────────────────────
 autoload -Uz compinit
@@ -45,6 +45,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ── Dev tools ─────────────────────────────────────────────────
 eval "$(mise activate zsh)"
+export PATH="$PATH:$(go env GOPATH)/bin"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 

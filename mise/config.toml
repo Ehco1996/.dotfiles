@@ -3,6 +3,7 @@ idiomatic_version_file_enable_tools = ["node"]
 
 [tools]
 bun = "1.2.21"
-go = "1.25.1"
+go = "1.26.1"
+node = "24.4.0"
 uv = "latest"
 pnpm = "latest"
