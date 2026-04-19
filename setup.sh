@@ -57,12 +57,12 @@ link_file() {
 
 info "Creating symlinks..."
 mkdir -p "$HOME/.config/mise"
-mkdir -p "$HOME/Library/Application Support/com.mitchellh.ghostty"
+mkdir -p "$HOME/.config/ghostty"
 link_file "$DOTFILES_DIR/zshrc"           "$HOME/.zshrc"
 link_file "$DOTFILES_DIR/tmux.conf"       "$HOME/.tmux.conf"
 link_file "$DOTFILES_DIR/startship.toml"  "$HOME/.config/starship.toml"
 link_file "$DOTFILES_DIR/mise/config.toml" "$HOME/.config/mise/config.toml"
-link_file "$DOTFILES_DIR/ghostty.conf"    "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+link_file "$DOTFILES_DIR/ghostty.conf"    "$HOME/.config/ghostty/config"
 
 # ── Mise: install dev tools ──────────────────────────────────
 info "Installing mise-managed tools (go, bun, uv, pnpm)..."
