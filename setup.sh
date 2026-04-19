@@ -58,6 +58,13 @@ link_file() {
 info "Creating symlinks..."
 mkdir -p "$HOME/.config/mise"
 mkdir -p "$HOME/.config/ghostty"
+# Ghostty on macOS prefers ~/Library/Application Support path over XDG;
+# remove any existing config there so the XDG symlink takes effect.
+GHOSTTY_MACOS_DIR="$HOME/Library/Application Support/com.mitchellh.ghostty"
+if [ -d "$GHOSTTY_MACOS_DIR" ] && [ -f "$GHOSTTY_MACOS_DIR/config" ] && [ ! -L "$GHOSTTY_MACOS_DIR/config" ]; then
+  rm "$GHOSTTY_MACOS_DIR/config"
+  ok "Removed existing Ghostty config at $GHOSTTY_MACOS_DIR/config"
+fi
 link_file "$DOTFILES_DIR/zshrc"           "$HOME/.zshrc"
 link_file "$DOTFILES_DIR/tmux.conf"       "$HOME/.tmux.conf"
 link_file "$DOTFILES_DIR/startship.toml"  "$HOME/.config/starship.toml"
