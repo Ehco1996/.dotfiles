@@ -1,6 +1,6 @@
 # ── Environment ───────────────────────────────────────────────
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH"
-export KUBECONFIG="$HOME/.kube/config"
+# KUBECONFIG managed by kubie (per-shell isolation)
 export SSHW_CONFIG_PATH="/Users/ehco/Google Drive/My Drive/sshw.yml"
 export CFLAGS="-I/opt/homebrew/opt/openssl/include"
 export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
@@ -60,7 +60,8 @@ fi
 
 # ── Aliases ───────────────────────────────────────────────────
 alias k="kubectl"
-alias kc="kubectx"
+alias kc="kubie ctx"
+alias kn="kubie ns"
 alias weather="curl wttr.in"
 alias t="tmux"
 alias ta="tmux attach"

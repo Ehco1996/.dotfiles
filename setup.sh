@@ -31,7 +31,7 @@ BREW_PACKAGES=(
   tmux
   # k8s
   kubectl
-  kubectx
+  kubie
 )
 
 info "Installing brew packages..."
