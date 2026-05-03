@@ -33,6 +33,7 @@ c() { _claude_ssh_wrap "command claude --dangerously-skip-permissions $*"; }
 alias peon="bash /Users/ehco/.claude/hooks/peon-ping/peon.sh"
 
 # ── Completion ────────────────────────────────────────────────
+FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
 autoload -Uz compinit
 compinit
 
@@ -62,6 +63,9 @@ fi
 alias k="kubectl"
 alias kc="kubie ctx"
 alias kn="kubie ns"
+
+# bind kubectl completion to k alias
+compdef k=kubectl
 alias weather="curl wttr.in"
 alias t="tmux"
 alias ta="tmux attach"
