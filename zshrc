@@ -5,6 +5,21 @@ export SSHW_CONFIG_PATH="/Users/ehco/Google Drive/My Drive/sshw.yml"
 export CFLAGS="-I/opt/homebrew/opt/openssl/include"
 export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
 
+# ── History ───────────────────────────────────────────────────
+# Replaces oh-my-zsh's lib/history.zsh (gone with omz). zsh's bare defaults
+# are HISTSIZE=30 / SAVEHIST=0 — history is never written to disk, which also
+# starves zsh-autosuggestions (its default strategy suggests from history).
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=50000
+
+setopt extended_history       # record command timestamps in HISTFILE
+setopt hist_expire_dups_first # trim duplicates first when HISTFILE overflows
+setopt hist_ignore_dups       # skip recording a line identical to the previous one
+setopt hist_ignore_space      # skip lines that start with a space
+setopt hist_verify            # expand history (e.g. !!) onto the line, don't auto-run
+setopt share_history          # share history live across concurrent sessions
+
 # ── Claude Code ───────────────────────────────────────────────
 export CLAUDE_CODE_NO_FLICKER=1
 export CLAUDE_CODE_AUTO_COMPACT_WINDOW=400000
@@ -15,13 +30,15 @@ _claude_ssh_wrap() {
       export KEYCHAIN_UNLOCKED=true
     fi
     if [ -n "$SSH_CONNECTION" ] && [ -z "$TMUX" ]; then
-      if tmux has-session -t claude 2>/dev/null; then
-        tmux attach-session -t claude
-      else
-        tmux new-session -d -s claude
-        tmux send-keys -t claude "$*" Enter
-        tmux attach-session -t claude
-      fi
+      # sentinel: v5-dirname-A — verify with `type _claude_ssh_wrap`
+      # Session name = current directory basename. -A attaches if a session
+      # with that name already exists, else creates one. -i forces interactive
+      # zsh so .zshrc loads (PATH etc). exec $shell -i keeps the window alive
+      # after the command exits.
+      local session_name shell
+      session_name="$(basename "$PWD")"
+      shell="${SHELL:-/bin/zsh}"
+      tmux new-session -A -s "$session_name" -c "$PWD" "$shell" -ic "$*; exec $shell -i"
     else
       eval "$@"
     fi
