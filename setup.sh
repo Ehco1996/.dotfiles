@@ -77,15 +77,15 @@ mise trust "$DOTFILES_DIR" 2>/dev/null
 mise install --yes && ok "mise tools installed" || err "Failed to install mise tools"
 
 # ── Peon-ping (RA2 Soviet Engineer notifications) ────────────
-if command -v peon &>/dev/null; then
-  ok "peon-ping already installed"
-else
-  info "Installing peon-ping..."
-  brew tap PeonPing/tap && brew install peon-ping && ok "peon-ping installed" || err "Failed to install peon-ping"
-fi
-info "Setting up peon-ping with ra2_soviet_engineer pack..."
-peon-ping-setup --packs=ra2_soviet_engineer 2>/dev/null && ok "peon-ping configured" || err "peon-ping setup failed"
-peon packs use ra2_soviet_engineer 2>/dev/null && ok "Active pack: ra2_soviet_engineer" || true
+# if command -v peon &>/dev/null; then
+#   ok "peon-ping already installed"
+# else
+#   info "Installing peon-ping..."
+#   brew tap PeonPing/tap && brew install peon-ping && ok "peon-ping installed" || err "Failed to install peon-ping"
+# fi
+# info "Setting up peon-ping with ra2_soviet_engineer pack..."
+# peon-ping-setup --packs=ra2_soviet_engineer 2>/dev/null && ok "peon-ping configured" || err "peon-ping setup failed"
+# peon packs use ra2_soviet_engineer 2>/dev/null && ok "Active pack: ra2_soviet_engineer" || true
 
 # ── Fix compinit permissions ─────────────────────────────────
 if [ -d "/opt/homebrew/share/zsh" ]; then

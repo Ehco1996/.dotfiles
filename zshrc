@@ -21,8 +21,8 @@ setopt hist_verify            # expand history (e.g. !!) onto the line, don't au
 setopt share_history          # share history live across concurrent sessions
 
 # ── Claude Code ───────────────────────────────────────────────
-export CLAUDE_CODE_NO_FLICKER=1
-export CLAUDE_CODE_AUTO_COMPACT_WINDOW=400000
+#export CLAUDE_CODE_NO_FLICKER=1
+#export CLAUDE_CODE_AUTO_COMPACT_WINDOW=400000
 
 _claude_ssh_wrap() {
     if [ -n "$SSH_CONNECTION" ] && [ -z "$KEYCHAIN_UNLOCKED" ]; then
@@ -47,14 +47,12 @@ _claude_ssh_wrap() {
 claude() { _claude_ssh_wrap "command claude $*"; }
 c() { _claude_ssh_wrap "command claude --dangerously-skip-permissions $*"; }
 
-alias peon="bash /Users/ehco/.claude/hooks/peon-ping/peon.sh"
 
 # ── Completion ────────────────────────────────────────────────
 FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
 autoload -Uz compinit
 compinit
 
-[ -f /Users/ehco/.claude/hooks/peon-ping/completions.bash ] && source /Users/ehco/.claude/hooks/peon-ping/completions.bash
 
 # ── Plugins (homebrew) ────────────────────────────────────────
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
