@@ -23,7 +23,7 @@ cd ~/.dotfiles
 `setup.sh` will:
 
 1. Install [Homebrew](https://brew.sh) (if not present)
-2. Install system tools via brew: zsh plugins, fzf, zoxide, starship, tmux, kubectl, kubie, mise
+2. Install system tools via brew: zsh plugins, fzf, fd, zoxide, starship, tmux, kubectl, kubie, mise
 3. Install TPM for tmux plugins
 4. Symlink all config files to `$HOME`
 5. Install dev tools via [mise](https://github.com/jdx/mise): bun, go, node, uv, pnpm
@@ -31,5 +31,5 @@ cd ~/.dotfiles
 
 ## Tool management
 
-- **Homebrew** — system-level tools: zsh plugins, fzf, zoxide, starship, tmux, kubectl, kubie, mise
+- **Homebrew** — system-level tools: zsh plugins, fzf, fd, zoxide, starship, tmux, kubectl, kubie, mise
 - **mise** — language runtimes & package managers: bun, go, node, uv, pnpm

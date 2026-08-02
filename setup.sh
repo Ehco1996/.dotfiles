@@ -30,6 +30,7 @@ BREW_PACKAGES=(
   zoxide
   starship
   tmux
+  fd
   # k8s
   kubectl
   kubie
