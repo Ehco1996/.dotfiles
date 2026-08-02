@@ -8,7 +8,8 @@ My macOS development environment.
 | ----------------- | ---------------------- |
 | `zshrc`           | Zsh configuration      |
 | `tmux.conf`       | Tmux configuration     |
-| `startship.toml`  | Starship prompt config |
+| `starship.toml`   | Starship prompt config |
+| `ghostty.conf`    | Ghostty configuration  |
 | `mise/config.toml`| Dev tools via mise     |
 
 ## Quick setup
@@ -22,12 +23,13 @@ cd ~/.dotfiles
 `setup.sh` will:
 
 1. Install [Homebrew](https://brew.sh) (if not present)
-2. Install system tools via brew: zsh plugins, fzf, zoxide, starship, tmux, kubectl, kubectx, mise
-3. Symlink all config files to `$HOME`
-4. Install dev tools via [mise](https://github.com/jdx/mise): go, bun, uv, pnpm
-5. Fix compinit directory permissions
+2. Install system tools via brew: zsh plugins, fzf, zoxide, starship, tmux, kubectl, kubie, mise
+3. Install TPM for tmux plugins
+4. Symlink all config files to `$HOME`
+5. Install dev tools via [mise](https://github.com/jdx/mise): bun, go, node, uv, pnpm
+6. Fix compinit directory permissions
 
 ## Tool management
 
-- **Homebrew** — system-level tools: zsh plugins, fzf, zoxide, starship, tmux, kubectl, kubectx
-- **mise** — language runtimes & package managers: go, bun, uv, pnpm
+- **Homebrew** — system-level tools: zsh plugins, fzf, zoxide, starship, tmux, kubectl, kubie, mise
+- **mise** — language runtimes & package managers: bun, go, node, uv, pnpm
